@@ -1,47 +1,52 @@
 # harp-nib
 
-> Nib is a Sylus library providing robust cross-browser CSS3 mixins.
+> Nib is a Stylus library, providing robust, cross-browser, CSS3 mixins.
 
 
 ## Dependencies
 
-  - [NodeJS](http://nodejs.org) - _server-side JavaScript runtime_
-  - [Harp](http://harpjs.com/docs/environment/install) - _static web server with built-in preprocessing_
+- [NodeJS](http://nodejs.org) – _Server-side JavaScript runtime_
+- [Harp](http://harpjs.com) – _The static web server with built-in preprocessing_
   
 ## Install
 
-To install nib run the following command from the root of your harp project:
+To install Nib, run the following command from the root of your Harp project:
 
 ```bash
 harp install nib
 ```
 
-Your Project will look something like this...
+Your project will look something like this…
 
 ```
-  myproject/            <-- your project root (or public dir if in framework-mode)
-    |- components/      <-- harp puts components here
-    |   +- harp-nib/    <-- where this lib gets installed
-    |         ...
-    |- main.styl        <-- your css file you reference 
-    +- index.jade       <-- your home page (as they used to call it)
-
+myproject/            <-- your project root (or public dir if in framework-mode)
+  |- components/      <-- harp puts components here
+  |   +- harp-nib/    <-- where this lib gets installed
+  |       …
+  |- main.styl              <-- where you reference Nib
+  +- index.jade             <-- where you reference main.css
 ```
 
 ## Link
 
-From within a **.styl** file in your project you can then **@import** nib, or a portion of nib:
+From within a `.less` file in your project you can then `@import` Nib:
 
 ```styl
-@import "components/harp-nib/nib";
-@import "components/harp-nib/nib/iconic";
+@import "components/harp-nib/styl"
+```
+
+Or, a portion of Nib:
+
+```styl
+@import "components/harp-nib/gradients"
+@import "components/harp-nib/overflow"
 ```
 
 ## Use
 
 #### Gradients
 
-Nib's gradient support is by far the largest feature it provides, not only is the syntax extremely similar to what you would normally write, it's more forgiving, expands to vendor equivalents, and can even produce a PNG for older browsers with node-canvas.
+Nib’s gradient support has been borrowed from [Axis](https://github.com/jenius/axis) so no additional dependencies are necessary and is is by far the largest feature Nib provides. Not only is the syntax extremely similar to what you would normally write, it’s more forgiving and expands to vendor equivalents.
 
 ```css
 body {
@@ -74,6 +79,24 @@ body {
   background: linear-gradient(left, 80% red, #000);
   background: linear-gradient(top, #eee, 90% white, 10% black);
 }
+```
+
+Creating a radial gradient is similar `linear-gradient` and also supports numerous color stops.
+
+```styl
+background: radial-gradient(white, red)
+```
+
+The most concusses option are a simple top-to-bottom two-colour gradient:
+
+```styl
+gradient(red, orange)
+```
+
+Or, pass in a base color, and the `simple-gradient` mixin will lighten and darken it by the specified strength and create a simple gradient with the base color being the middle/average. 
+
+```styl
+simple-gradient(purple, 10%)
 ```
 
 #### Positional Mixins
@@ -148,7 +171,7 @@ yielding:
 
 #### Border Radius
 
-Nib's border-radius supports both the regular syntax as well as augmenting it to make the value more expressive.
+Nib’s border-radius supports both the regular syntax as well as augmenting it to make the value more expressive.
 
 ```css
 button {
@@ -246,7 +269,7 @@ button {
 
 #### Reset
 
-Nib comes bundled with Eric Meyer's style reset support, you can choose to apply the global or any specifics that you wish. To view the definitions view reset.styl
+Nib comes bundled with Eric Meyer’s style reset support, you can choose to apply the global or any specifics that you wish. To view the definitions view reset.styl
 
 - global-reset()
 - nested-reset()
@@ -308,6 +331,7 @@ The following properties follow vendor expansion much like border-radius, howeve
 * [Harp documentation](http://harpjs.com/docs/)
 * [Stylus documentation](http://learnboost.github.io/stylus/)
 * [Nib documentation](http://visionmedia.github.com/nib/)
+* [Axis’ gradient documentation](http://roots.cx/axis/#gradients)
 
 ## License
 
