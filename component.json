@@ -22,7 +22,7 @@
     "styl/_reset.styl",
     "styl/_size.styl",
     "styl/_vendor.styl",
-    "styl/_index.styl",
+    "styl/index.styl",
     "styl/_text/_aliases.styl",
     "styl/_text/_ellipsis.styl",
     "styl/_text/_hide-text.styl",
