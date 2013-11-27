@@ -27,7 +27,7 @@
     "styl/text/_ellipsis.styl",
     "styl/text/_hide-text.styl",
     "styl/text/_replace-text.styl",
-    "styl/text/_index.styl"
+    "styl/text/index.styl"
   ],
   "fonts": [
     "fonts/iconic_stroke.eot",
