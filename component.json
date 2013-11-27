@@ -30,9 +30,9 @@
     "styl/text/_index.styl"
   ],
   "fonts": [
-    "iconic/iconic_stroke.eot",
-    "iconic/iconic_stroke.otf",
-    "iconic/iconic_stroke.svg",
-    "iconic/iconic_stroke.ttf"
+    "fonts/iconic_stroke.eot",
+    "fonts/iconic_stroke.otf",
+    "fonts/iconic_stroke.svg",
+    "fonts/iconic_stroke.ttf"
   ]
 }
