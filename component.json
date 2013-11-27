@@ -23,11 +23,11 @@
     "styl/_size.styl",
     "styl/_vendor.styl",
     "styl/index.styl",
-    "styl/_text/_aliases.styl",
-    "styl/_text/_ellipsis.styl",
-    "styl/_text/_hide-text.styl",
-    "styl/_text/_replace-text.styl",
-    "styl/_text/_index.styl"
+    "styl/text/_aliases.styl",
+    "styl/text/_ellipsis.styl",
+    "styl/text/_hide-text.styl",
+    "styl/text/_replace-text.styl",
+    "styl/text/_index.styl"
   ],
   "fonts": [
     "iconic/iconic_stroke.eot",
