@@ -23,16 +23,16 @@
     "styl/_size.styl",
     "styl/_vendor.styl",
     "styl/index.styl",
-    "styl/_text/_aliases.styl",
-    "styl/_text/_ellipsis.styl",
-    "styl/_text/_hide-text.styl",
-    "styl/_text/_replace-text.styl",
-    "styl/_text/_index.styl"
+    "styl/text/_aliases.styl",
+    "styl/text/_ellipsis.styl",
+    "styl/text/_hide-text.styl",
+    "styl/text/_replace-text.styl",
+    "styl/text/index.styl"
   ],
   "fonts": [
-    "iconic/iconic_stroke.eot",
-    "iconic/iconic_stroke.otf",
-    "iconic/iconic_stroke.svg",
-    "iconic/iconic_stroke.ttf"
+    "fonts/iconic_stroke.eot",
+    "fonts/iconic_stroke.otf",
+    "fonts/iconic_stroke.svg",
+    "fonts/iconic_stroke.ttf"
   ]
 }
