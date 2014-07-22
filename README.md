@@ -10,10 +10,11 @@
   
 ## Install
 
-To install Nib, run the following command from the root of your Harp project:
+To install Nib, you can [download this repository](https://github.com/harp/nib/archive/master.zip) or use the [Component](http://component.io) package manager.
 
 ```bash
-harp install nib
+npm install -g component
+component install harp/nib
 ```
 
 Your project will look something like this…
